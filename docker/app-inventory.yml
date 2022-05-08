@@ -1,0 +1,8 @@
+version: '3'
+services:
+  app-inventory:
+    container_name: kruger-micro-inventory
+    image: "app-inventory:v1"
+    build: .
+    ports:
+      - "8090:8090"
